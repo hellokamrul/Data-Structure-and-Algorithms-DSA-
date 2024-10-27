@@ -8,10 +8,13 @@ int findMin_Number(int arr[],int sizes)
     //cout<<"Size :"<<sizes;
     for(int i=0;i<sizes;i++)
     {
-        if(minNum>arr[i]){
-            minNum = arr[i];
-        }
-        i++;
+        //        if(minNum>arr[i]){
+        //            minNum = arr[i];
+        //        }
+
+        //use min function
+        minNum = min(minNum,arr[i]);
+
     }
     return minNum;
 }
